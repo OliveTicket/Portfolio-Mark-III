@@ -1,0 +1,119 @@
+body {  
+  text-align: center;
+  background-color: #FBF3D5 ;
+}
+
+footer {
+  background-color: #9CAFAA;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.container {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.flex_my_skill {
+  background-color: #D6DAC8 ;
+}
+
+.icon {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+  place-content: center;
+}
+
+.intro {
+  background-color: #EFBC9B;
+}
+
+.sura-bold {
+  font-family: "Sura", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sura-regular {
+  font-family: "Sura", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#id { 
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+
+  height: 100px;
+  width: 100px;
+}
+
+#intro {
+  background-color: #9CAFAA;
+}
+
+#navi {
+  background-color: #9CAFAA;
+}
+
+#name {
+  display: flex;
+  gap: 10px;
+}
+
+#me {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+#post {
+  height: 128px;
+  width: 128px;
+}
+
+#skill {
+  background-color: #D6DAC8;
+}
+
+
+
+/* 
+Light
+
+#EFBC9B rgb(239, 188, 155)
+#FBF3D5 rgb(251, 243, 213)
+#D6DAC8 rgb(214, 218, 200)
+#9CAFAA rgb(156, 175, 170)
+*/
+
+/* 
+Dark
+
+-experiment
+#2B8ECE rgb(43,142,206)
+#5A75DA rgb(90,117,218)
+#6E59B9 rgb(110,89,185)
+#8E4055 rgb(142,6485)
+
+-or
+#362222 rgb(54, 34, 34)
+#171010 rgb(23, 16, 16)
+#423F3E rgb(66, 63, 62)
+#2B2B2B rgb(43, 43, 43)
+*/
