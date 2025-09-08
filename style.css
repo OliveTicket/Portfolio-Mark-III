@@ -1,10 +1,46 @@
+:root {
+  --primary-color: #EEF5FF;
+  --secondary-color: #9EB8D9;
+  --third : #7C93C3;
+  --last: #A25772;
+  --txt: #272829;
+}
+
+.darkmode { 
+  --primary-color: #272829;
+  --secondary-color: #61677A;
+  --third : #61677A;
+  --last: #61677A;
+  --txt: #FFF6E0;
+}
+
+a {
+  text-decoration: none; 
+  color: var(--txt);
+}
+
+a:visited {
+  color: var(--txt);
+}
+
+a:hover , a:focus {
+ color: var(--primary-color);
+}
+
+/*
+a:active {
+
+} 
+*/
+
 body {  
   text-align: center;
-  background-color: #FBF3D5 ;
+  background-color: var(--primary-color);
+  color: var(--txt);
 }
 
 footer {
-  background-color: #9CAFAA;
+ background-color: var(--last);
 }
 
 li {
@@ -17,14 +53,20 @@ p {
   font-weight: 700;
 }
 
+.color-link {
+  color: var(--txt);
+
+}
+
 .container {
-  padding: 10px;
   display: flex;
+  background-color: var(--last);
+  padding: 10px;
   gap: 10px;
 }
 
 .flex_my_skill {
-  background-color: #D6DAC8 ;
+  background-color: var(--secondary-color);
 }
 
 .icon {
@@ -37,7 +79,7 @@ p {
 }
 
 .intro {
-  background-color: #EFBC9B;
+  background-color: var(--third);
 }
 
 .sura-bold {
@@ -63,13 +105,6 @@ p {
   width: 100px;
 }
 
-#intro {
-  background-color: #9CAFAA;
-}
-
-#navi {
-  background-color: #9CAFAA;
-}
 
 #name {
   display: flex;
@@ -87,33 +122,51 @@ p {
   width: 128px;
 }
 
-#skill {
-  background-color: #D6DAC8;
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
+#theme-switch svg {
+  fill: var(--txt);
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+  display: block;
+}
 
 
 /* 
 Light
 
-#EFBC9B rgb(239, 188, 155)
-#FBF3D5 rgb(251, 243, 213)
-#D6DAC8 rgb(214, 218, 200)
-#9CAFAA rgb(156, 175, 170)
-*/
-
-/* 
-Dark
-
--experiment
-#2B8ECE rgb(43,142,206)
-#5A75DA rgb(90,117,218)
-#6E59B9 rgb(110,89,185)
-#8E4055 rgb(142,6485)
+#3AA6B9 moderate cyan
+#FFD0D0 very pale pink
+#FF9EAA rose bud
+#F9F9E0 creamish white
 
 -or
-#362222 rgb(54, 34, 34)
-#171010 rgb(23, 16, 16)
-#423F3E rgb(66, 63, 62)
-#2B2B2B rgb(43, 43, 43)
+
+Dark Mode
+
+272829 black
+61677A mid grey
+D8D9DA grey
+FFF6E0 cream white
 */
